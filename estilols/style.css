@@ -12,18 +12,17 @@ body {
 }
 
 div#container {
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     width: 97vw;
     height: 97vh;
 }
 
 section {
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 515px;
     border-radius: 20px;
@@ -37,10 +36,9 @@ section {
 }
 
 div#imagem {
-    display: block;
+
     background-image: url(../imagens/pexels-dinnow-86001860-9444476.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     
